@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "Cached versions of commonly used namespaces",
   "scripts": {
-    "test": "coffee test/*.coffee | tap-spec",
+    "test": "coffee test/*.coffee",
     "docs": "echo 'E: Documentation generation is temporarily disabled because of security vulnerabilities in dependencies of docker@^0.2.14. The command used was:' docker -i src -o apidocs -s -n -c vs",
     "compile": "coffee -c -o lib src ; cp -r src/contexts lib",
     "clean": "rm -r apidocs lib ; true",
@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "coffee-script": "^1.9.1",
-    "tap-spec": "^2.2.2",
     "tape": "^4.0.0"
   },
   "main": "lib/index.js"
